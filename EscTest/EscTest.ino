@@ -1,7 +1,7 @@
 // Need the Servo library
 #include <Servo.h>
 
-#define NUMMOTORS 1
+#define NUMMOTORS 4
 typedef struct MotorDef
 {
     Servo   Motor; 
@@ -37,10 +37,10 @@ void setup()
 	Serial.println("Setup: Serial port communication at 9600bps");
 	// Attach motors to pins
 	
-        Motors[0].Pin =  3;
-	//Motors[1].Pin =  10;
-	//Motors[2].Pin =  9;
-	//Motors[3].Pin =  8;
+        Motors[0].Pin =  11;
+	Motors[1].Pin =  10;
+	Motors[2].Pin =  9;
+	Motors[3].Pin =  8;
 
         for(int i = 0; i < NUMMOTORS; i++)
         {
